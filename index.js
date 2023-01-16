@@ -51,6 +51,6 @@ app.all('*', (req, res) => {
   res.status(400).json({ success: false, message: '找不到' });
 });
 
-app.listen(process.env.PROT || 4000, () => {
+app.listen(process.env.PORT || 4000, () => {
   console.log('伺服器啟動');
 });
